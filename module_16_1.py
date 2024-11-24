@@ -18,9 +18,6 @@ async def admin():
 async def user_id(user_id: str):
     return {'message': f'Вы вошли как пользователь №{user_id}'}
 
-@app.get('user/')
-async def info(username: str, age: int):
-    return {'message': f'Hello {username} {age}'}
 
 
 
